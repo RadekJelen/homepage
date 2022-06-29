@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/navigation.css" rel="stylesheet">
+    <link href="css/avatar.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link href="css/button.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <title>Prosta strona o mnie</title>
+</head>
+
+<body class="body">
+    <header class="header" id="home">
+        <h1>Radosław Jeleń - Prosta strona o mnie</h1>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li class="navigation__item">
+                <a class="navigation__link" href="#home">Home</a>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__link" href="#o-mnie">O mnie</a>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__link" href="#zaintersowania">Zaintersowania</a>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__link" href="#hobby">Hobby</a>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__link" href="#wiecej">Więcej</a>
+            </li>
+        </ul>
+    </nav>
+    <hr>
+    <main>
+        <section class="avatar">
+            <h2>Cześć! Fajnie, że to czytasz &#128516;</h2>
+            <img class="avatar__img" width=200 height=200 src="img/RJ.jpg" alt="Radosław Jeleń-portret">
+        </section>
+
+        <section>
+            <article id="o-mnie">
+                <h3>Trochę o mnie</h3>
+                <p>
+                    Mam 27 lat. Mieszkam w Gdańsku. Studiowałem dietetykę i zarządzanie, a z zawodu jestem kucharzem.
+                    Bardzo lubię gotować i zawsze to ze mną zostanie, lecz postanowiłem dokonać zmiany zawodu. Padło na
+                    IT - zapewne nikogo to tutaj nie dziwi &#128521;
+                </p>
+            </article>
+
+            <article id="zaintersowania">
+                <h3>Moje zainteresowania</h3>
+                <p>
+                    Oczywiście jest ich więcej niż dostępnego czasu &#128517; <em>Aktualnie 100% wolnego czasu i
+                    dostępnych sił planuję poświęcić na ten kurs i zdobycie nowych umiejętności.</em> A ponadto
+                    interesuję się: <strong>gotowaniem, terrarystyką, turystyką i muzyką</strong>.
+                </p>
+            </article>
+
+            <article id="hobby">
+                <h3>Hobby</h3>
+                <p>
+                    Bez wątpienia na pierwszym miejscu będzie to hodowla ptaszników - <b>obecnie posiadam 3</b>. A w
+                    przyszłości planuję zwiększyć kolekcję &#128512; <i>Escape room</i> - to druga rzecz, która jest
+                    bliska mojemu sercu. Osobiścieuważam, że nie ma nic lepszego w życiu niż czas spędzony w gronie
+                    znajomych na wspólnym rozwiązywaniu zagadek pod nieuniknioną presją czasu &#8986; A ponadto w wolnej
+                    chwili lubię zagłębić się w dobrej lekturze lub serialu.
+                </p>
+            </article>
+        </section>
+
+        <section id="wiecej">
+            <h3 class="header">Najlepsze pokoje Escape room (moim zadniem &#128521;)</h3>
+            <div class="tableContainer">
+                <table class="tableContainer__table">
+                    <caption class="tableContainer__caption">
+                        Tabela przygotowana na podstawie danych zebranych ze strony Lockme.pl (dnia 23.06.2022r.).
+                        <br>* - link po kliknięciu otwiera się w nowej karcie.
+                    </caption>
+                    <thead>
+                        <tr class="tableContainer__row">
+                            <th class="tableContainer__cell tableContainer__cell--header" scope="col">Nazwa</th>
+                            <th class="tableContainer__cell tableContainer__cell--header" scope="col">Miasto</th>
+                            <th class="tableContainer__cell tableContainer__cell--header" scope="col">Gatunek</th>
+                            <th class="tableContainer__cell tableContainer__cell--header" scope="col">Dodatkowe informacje
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tableContainer__row">
+                            <th class="tableContainer__cell tableContainer__cell--header" scope="row">Klątwa Czarnobrodego
+                            </th>
+                            <td class="tableContainer__cell">Bydgoszcz</td>
+                            <td class="tableContainer__cell">Przygodowy</td>
+                            <td class="tableContainer__cell">
+                                <a class="tableContainer__link" rel="noreferrer noopener" target="_blank"
+                                    href="https://lock.me/pl/polska/kujawsko-pomorskie/bydgoszcz/escape-room/mr-lock-escape-room/10725-klatwa-czarnobrodego">
+                                    Link do Lockme.pl*
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="tableContainer__row">
+                            <th class="tableContainer__cell tableContainer__cell--header" scope="row">Tajemnicze Domostwo</th>
+                            <td class="tableContainer__cell">Poznań</td>
+                            <td class="tableContainer__cell">Thriller</td>
+                            <td class="tableContainer__cell">
+                                <a class="tableContainer__link" rel="noreferrer noopener" target="_blank"
+                                    href="https://lock.me/pl/polska/wielkopolskie/poznan/escape-room/dreamscape/10928-tajemnicze-domostwo">
+                                    Link do Lockme.pl*
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="tableContainer__row">
+                            <th class="tableContainer__cell tableContainer__cell--header" scope="row">Piracka Skrzynia
+                                Umarlaka</th>
+                            <td class="tableContainer__cell">Gdynia</td>
+                            <td class="tableContainer__cell">Fantasy</td>
+                            <td class="tableContainer__cell">
+                                <a class="tableContainer__link" rel="noreferrer noopener" target="_blank"
+                                    href="https://lock.me/pl/polska/pomorskie/trojmiasto/gdynia/escape-room/escape-me-2/12678-piracka-skrzynia-umarlaka">
+                                    Link do Lockme.pl*
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="tableContainer__row">
+                            <th class="tableContainer__cell tableContainer__cell--header" scope="row">Expecto Patronum!</th>
+                            <td class="tableContainer__cell">Gdańsk</td>
+                            <td class="tableContainer__cell">Przygodowy</td>
+                            <td class="tableContainer__cell">
+                                <a class="tableContainer__link" rel="noreferrer noopener" target="_blank"
+                                    href="https://lock.me/pl/polska/pomorskie/trojmiasto/gdansk/escape-room/escape-time-1/11822-expecto-patronum">
+                                    Link do Lockme.pl*
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="tableContainer__row">
+                            <th class="tableContainer__cell tableContainer__cell--header" scope="row">Sekret dziadka</th>
+                            <td class="tableContainer__cell">Poznań</td>
+                            <td class="tableContainer__cell">Fabularny</td>
+                            <td class="tableContainer__cell">
+                                <a class="tableContainer__link" rel="noreferrer noopener" target="_blank"
+                                    href="https://lock.me/pl/polska/wielkopolskie/poznan/escape-room/center-poznan/1369-sekret-dziadka">
+                                    Link do Lockme.pl*
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="tableContainer__row">
+                            <th class="tableContainer__cell tableContainer__cell--header" scope="row">Tajemnica Alchemika</th>
+                            <td class="tableContainer__cell">Kraków</td>
+                            <td class="tableContainer__cell">Historyczny</td>
+                            <td class="tableContainer__cell">
+                                <a class="tableContainer__link" rel="noreferrer noopener" target="_blank"
+                                    href="https://lock.me/pl/polska/malopolska/krakow/escape-room/combinator-krakow/10699-tajemnica-alchemika">
+                                    Link do Lockme.pl*
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="tableContainer__row">
+                            <th class="tableContainer__cell tableContainer__cell--header" scope="row">Łódź Podwodna</th>
+                            <td class="tableContainer__cell">Zakopane</td>
+                            <td class="tableContainer__cell">Przygodowy</td>
+                            <td class="tableContainer__cell">
+                                <a class="tableContainer__link" rel="noreferrer noopener" target="_blank"
+                                    href="https://lock.me/pl/polska/malopolska/zakopane/escape-room/letmeout/10927-lodz-podwodna">
+                                    Link do Lockme.pl*
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <button class="button js-button">
+            <span class="js-buttonName"> Guzik może uciekać?</span>
+        </button>
+    </main>
+    <footer class="footer">
+        <span>
+            Sam to zrobilem, serio &#128516;
+        </span>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+.tableContainer {
+    overflow-x: auto;
+}
+
+.tableContainer__table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.tableContainer__caption {
+    caption-side: bottom;
+    margin-top: 10px;
+    font-size: small;
+}
+
+.tableContainer__cell {
+    border: 1px solid #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.tableContainer__cell--header {
+    background-color: #234e7038;
+    font-weight: bold;
+}
+
+.tableContainer__row:nth-child(even) {
+    background-color: #ddd;
+}
+
+.tableContainer__link {
+    text-decoration: none;
+}
