@@ -1,11 +1,24 @@
-console.log("Hello world!")
+{
+    const welcome = () => {
+        console.log("Hello world!");
+    };
 
-let buttonElement = document.querySelector(".js-button");
-let buttonNameElement = document.querySelector(".js-buttonName");
+    const toggleButton = (buttonElement) => {
+        const buttonNameElement = document.querySelector(".js-buttonName");
 
+        buttonElement.classList.toggle("button--left");
+        buttonNameElement.innerText = buttonElement.classList.contains("button--left") ? "Oczywiście 😜" : "Guzik może uciekać?";
+    };
 
-buttonElement.addEventListener("click", () => {
-    buttonElement.classList.toggle("button--left"); 
+    const init = () => {
+        const buttonElement = document.querySelector(".js-button");
 
-    buttonNameElement.innerText = buttonElement.classList.contains("button--left") ? "Oczywiście 😜" : "Guzik może uciekać?";
-});
+        buttonElement.addEventListener("click", () => {
+            toggleButton(buttonElement);
+        });
+
+        welcome();
+    };
+
+    init();
+}
